@@ -1,6 +1,8 @@
 # Navigation And Tabs
 
-This example is sourced from https://notificare.com/blog/2022/11/25/a-better-tabview-in-swiftui/
+Sources used:
+https://notificare.com/blog/2022/11/25/a-better-tabview-in-swiftui/
+https://developer.apple.com/documentation/swiftui/migrating-to-new-navigation-types
 
 This repo is comprised of a TabView housing two navigation flows (separate NavigationStack respectively).
 iOS 16 is the current version of this work and demonstrates the usage of NavigationStack and NavigationLink

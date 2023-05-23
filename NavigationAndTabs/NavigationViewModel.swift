@@ -36,19 +36,6 @@ struct DataOneDetail: Hashable {
                                          .init(description: "detail description 3"),]
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 enum FlowTwoNavDestination: Hashable {
     case dataTwo(DataTwo)
     case detail(DataTwoDetail)
