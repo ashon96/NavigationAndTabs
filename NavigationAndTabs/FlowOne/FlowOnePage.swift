@@ -24,7 +24,7 @@ struct FlowOnePage: View {
                 DataOneView(data: $0)
             }
             .navigationDestination(for: DataOneDetail.self) {
-                Text($0.description)
+                DataOneDetailView(data: $0)
             }
         }
     }

@@ -25,14 +25,9 @@ struct FlowTwoPage: View {
             .navigationDestination(for: FlowTwoNavDestination.self) { destination in
                 switch destination {
                 case .dataTwo(let dataTwoItem):
-                    NavigationLink(value: FlowTwoNavDestination.detail(dataTwoItem.detail)) {
-                        VStack {
-                            Image(systemName: dataTwoItem.systemName)
-                            Text(dataTwoItem.description)
-                        }
-                    }
+                    DataTwoView(data: dataTwoItem)
                 case .detail(let detailItem):
-                    Image(systemName: detailItem.anotherSystemName)
+                    DataTwoDetailView(data: detailItem)
                 }
             }
             //            .navigationDestination(for: DataTwo.self) { dest in
