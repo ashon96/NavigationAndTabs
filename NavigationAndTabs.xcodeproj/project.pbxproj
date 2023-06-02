@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A897E1D2A2A175500E9747F /* ScrollerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A897E1C2A2A175500E9747F /* ScrollerView.swift */; };
 		5AF5814A2A1CF27E0009ECA3 /* NavigationAndTabsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF581492A1CF27E0009ECA3 /* NavigationAndTabsApp.swift */; };
 		5AF5814C2A1CF27E0009ECA3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF5814B2A1CF27E0009ECA3 /* ContentView.swift */; };
 		5AF5814E2A1CF27F0009ECA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AF5814D2A1CF27F0009ECA3 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A897E1C2A2A175500E9747F /* ScrollerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollerView.swift; sourceTree = "<group>"; };
 		5AF581462A1CF27E0009ECA3 /* NavigationAndTabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationAndTabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AF581492A1CF27E0009ECA3 /* NavigationAndTabsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationAndTabsApp.swift; sourceTree = "<group>"; };
 		5AF5814B2A1CF27E0009ECA3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				5AF581572A1CF3400009ECA3 /* NavigationViewModel.swift */,
 				5AF581612A1D0AC20009ECA3 /* FlowOne */,
 				5AF581622A1D0AD30009ECA3 /* FlowTwo */,
+				5A897E1C2A2A175500E9747F /* ScrollerView.swift */,
 			);
 			path = NavigationAndTabs;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				5AF581642A1D0AEF0009ECA3 /* DataTwoView.swift in Sources */,
 				5AF5814A2A1CF27E0009ECA3 /* NavigationAndTabsApp.swift in Sources */,
 				5AF5815A2A1CF52A0009ECA3 /* FlowOnePage.swift in Sources */,
+				5A897E1D2A2A175500E9747F /* ScrollerView.swift in Sources */,
 				5AF5815C2A1CF57D0009ECA3 /* FlowTwoPage.swift in Sources */,
 				5AF581602A1D0A680009ECA3 /* DataOneDetailView.swift in Sources */,
 				5AF581662A1D0B2D0009ECA3 /* DataTwoDetailView.swift in Sources */,

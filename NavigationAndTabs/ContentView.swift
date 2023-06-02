@@ -9,15 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var navViewModel = NavigationViewModel()
-    
+    @State private var tappedTwice = false
+    @State private var listItemID: String?
+
     private func customSelectedTabBinding() -> Binding<NavTab> {
         Binding {
             navViewModel.selectedTab
         } set: { selectedTab in
             switch selectedTab {
             case .flowTwo:
-                withAnimation {
-                    navViewModel.flowTwo = []
+                if navViewModel.flowTwo.isEmpty {
+                    tappedTwice = true
+                } else {
+                    withAnimation {
+                        navViewModel.flowTwo = []
+                    }
                 }
             default:
                 print("fall through")
@@ -29,13 +35,14 @@ struct ContentView: View {
     }
     
     var body: some View {
-        TabView(selection: $navViewModel.selectedTab) {
+        TabView(selection: customSelectedTabBinding()) {
             FlowOnePage()
                 .tabItem {
                     Image(systemName: "paperplane")
                 }
                 .tag(NavTab.flowOne)
-            FlowTwoPage()
+            FlowTwoPage(listItemID: $listItemID)
+                .supportScrollToTop(for: listItemID, from: $tappedTwice)
                 .tabItem {
                     Image(systemName: "figure.boxing")
                 }

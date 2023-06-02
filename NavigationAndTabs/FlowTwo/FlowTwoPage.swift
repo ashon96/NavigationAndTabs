@@ -10,6 +10,8 @@ import SwiftUI
 struct FlowTwoPage: View {
     @EnvironmentObject var navViewModel: NavigationViewModel
     
+    @Binding var listItemID: String?
+        
     var body: some View {
         NavigationStack(path: $navViewModel.flowTwo) {
             VStack {
@@ -19,6 +21,7 @@ struct FlowTwoPage: View {
                         NavigationLink(value: FlowTwoNavDestination.dataTwo(item)) {
                             Image(systemName: item.systemName)
                         }
+                        .id(item.id.uuidString)
                     }
                 }
             }
@@ -29,6 +32,9 @@ struct FlowTwoPage: View {
                 case .detail(let detailItem):
                     DataTwoDetailView(data: detailItem)
                 }
+            }
+            .onAppear {
+                listItemID = DataTwo.mocks[0].id.uuidString
             }
             //            .navigationDestination(for: DataTwo.self) { dest in
             //                NavigationLink(value: dest.detail) {
@@ -47,6 +53,6 @@ struct FlowTwoPage: View {
 
 struct FlowTwo_Previews: PreviewProvider {
     static var previews: some View {
-        FlowTwoPage()
+        FlowTwoPage(listItemID: .constant(nil))
     }
 }

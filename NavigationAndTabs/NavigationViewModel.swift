@@ -24,8 +24,8 @@ struct DataOne: Identifiable, Hashable {
     var detail: DataOneDetail
     
     static let mocks: [DataOne] = [.init(title: "first", description: "sdfsd", detail: DataOneDetail.mocks[0]),
-                                  .init(title: "second", description: "sfsdfsdfd", detail: DataOneDetail.mocks[1]),
-                                  .init(title: "third", description: "last description", detail: DataOneDetail.mocks[2])]
+                                   .init(title: "second", description: "sfsdfsdfd", detail: DataOneDetail.mocks[1]),
+                                   .init(title: "third", description: "last description", detail: DataOneDetail.mocks[2])]
 }
 
 struct DataOneDetail: Hashable {
@@ -50,12 +50,32 @@ struct DataTwo: Identifiable, Hashable {
     
     static let mocks: [DataTwo] = [.init(systemName: "figure.baseball", description: "baseball description", detail: DataTwoDetail.mocks[0]),
                                    .init(systemName: "figure.bowling", description: "bowling description", detail: DataTwoDetail.mocks[1]),
-                                   .init(systemName: "figure.cooldown", description: "cooldown description", detail: DataTwoDetail.mocks[1])]
+                                   .init(systemName: "figure.cooldown", description: "cooldown description", detail: DataTwoDetail.mocks[1]),
+                                   .init(systemName: "figure.baseball", description: "baseball description", detail: DataTwoDetail.mocks[0]),
+                                   .init(systemName: "figure.bowling", description: "bowling description", detail: DataTwoDetail.mocks[1]),
+                                   .init(systemName: "figure.cooldown", description: "cooldown description", detail: DataTwoDetail.mocks[1]),
+                                   .init(systemName: "figure.baseball", description: "baseball description", detail: DataTwoDetail.mocks[0]),
+                                   .init(systemName: "figure.bowling", description: "bowling description", detail: DataTwoDetail.mocks[1]),
+                                   .init(systemName: "figure.cooldown", description: "cooldown description", detail: DataTwoDetail.mocks[1]),
+                                   .init(systemName: "figure.baseball", description: "baseball description", detail: DataTwoDetail.mocks[0]),
+                                   .init(systemName: "figure.bowling", description: "bowling description", detail: DataTwoDetail.mocks[1]),
+                                   .init(systemName: "figure.cooldown", description: "cooldown description", detail: DataTwoDetail.mocks[1]),
+                                   .init(systemName: "figure.baseball", description: "baseball description", detail: DataTwoDetail.mocks[0]),
+                                   .init(systemName: "figure.bowling", description: "bowling description", detail: DataTwoDetail.mocks[1]),
+                                   .init(systemName: "figure.cooldown", description: "cooldown description", detail: DataTwoDetail.mocks[1]),
+                                   .init(systemName: "figure.baseball", description: "baseball description", detail: DataTwoDetail.mocks[0]),
+                                   .init(systemName: "figure.bowling", description: "bowling description", detail: DataTwoDetail.mocks[1]),
+                                   .init(systemName: "figure.cooldown", description: "cooldown description", detail: DataTwoDetail.mocks[1]),
+                                   .init(systemName: "figure.baseball", description: "baseball description", detail: DataTwoDetail.mocks[0]),
+                                   .init(systemName: "figure.bowling", description: "bowling description", detail: DataTwoDetail.mocks[1]),
+                                   .init(systemName: "figure.cooldown", description: "cooldown description", detail: DataTwoDetail.mocks[1]),
+                                   .init(systemName: "figure.baseball", description: "baseball description", detail: DataTwoDetail.mocks[0]),
+                                   .init(systemName: "figure.bowling", description: "bowling description", detail: DataTwoDetail.mocks[1]),]
 }
 
 struct DataTwoDetail: Hashable {
     var anotherSystemName: String
-
+    
     static let mocks: [DataTwoDetail] = [.init(anotherSystemName: "figure.curling"),
                                          .init(anotherSystemName: "figure.climbing"),
                                          .init(anotherSystemName: "figure.basketball")]
